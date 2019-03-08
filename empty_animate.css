@@ -1,0 +1,231 @@
+/****************************
+General HTML stuff
+****************************/
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+}
+
+#elements {
+    padding: 2em;
+    max-width: 70%;
+    overflow: hidden;
+    padding-bottom: 8em;
+}
+
+/****************************
+Timing functions
+****************************/
+
+.timings p {
+    /* animation-duration: ; */
+    /* animation-name: ; */
+    /* animation-iteration-count: ; */
+    /* animation-direction: ; */
+    /* animation-delay: ; */
+}
+
+#slide-1 {
+    /* animation-timing-function: ; */
+}
+
+#slide-2 {
+    /* animation-timing-function: ; */
+}
+
+#slide-3 {
+    /* animation-timing-function: ; */
+}
+
+#slide-4 {
+    /* animation-timing-function: ; */
+}
+
+#slide-5 {
+    /* animation-timing-function: ; */
+}
+
+#slide-6 {
+    /* animation-timing-function: ; */
+}
+
+#slide-7 {
+    /* animation-timing-function: ; */
+}
+
+@keyframes sliding {
+    /* Alias for 0% */
+    from {
+    }
+
+    /* Alias for 100% */
+    to {
+    }
+}
+
+/****************************
+Fill modes
+****************************/
+
+.fill-modes span {
+    display: inline-block;
+    border-radius: 1px;
+    /* animation-name: ; */
+    /* animation-duration: ; */
+    /* animation-delay: ; */
+    padding: 1.5em 1em;
+}
+
+#fill-2 {
+    /* animation-fill-mode: ; */
+}
+
+#fill-3 {
+    /* animation-fill-mode: ; */
+}
+
+#fill-4 {
+    /* animation-fill-mode: ; */
+}
+
+@keyframes colors {
+    0% {
+    }
+    50% {
+    }
+    100% {
+    }
+}
+
+/****************************
+Spinners
+****************************/
+
+.spinners i {
+    font-size: 1.5em;
+}
+
+.spinners > div {
+    display: inline-block;
+    padding-right: 5em;
+}
+
+.loader-wrapper {
+    padding: 3em;
+    text-align: center;
+}
+
+#loading-cubic {
+    /* animation: ; */
+}
+
+#loading-linear {
+    /* animation: ; */
+}
+
+@keyframes spin {
+    from {
+    }
+    to {
+    }
+}
+
+/****************************
+Loading bars
+****************************/
+.bars > div {
+    display: inline-block;
+    padding-right: 4em;
+    padding-bottom: 2em;
+    width: 40%;
+}
+
+/* Adapted from
+https://codepen.io/brunjo/pen/azdWjY
+*/
+#barber-bar {
+    width: 100%;
+    height: 1em;
+    border: 1px solid #2980b9;
+    border-radius: 3px;
+    background-image: 
+        repeating-linear-gradient(
+        -45deg,
+        white,
+        white 11px,
+        indigo 10px,
+        indigo 20px /* determines size */
+        );
+    background-size: 28px 28px;
+    /* animation: ; */
+}
+
+@keyframes move {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 28px 0;
+    }
+}
+
+/* Adapted from
+https://codepen.io/brunjo/pen/wBKmbm
+*/
+.google-assistant {
+    display: inline-block;
+    width: 4px;
+    height: 18px;
+    border-radius: 4px;
+    /* animation: ; */
+}
+
+.google-assistant:nth-child(1) {
+    background-color: #3498db;
+    animation-delay: 0;
+}
+.google-assistant:nth-child(2) {
+    background-color: #c0392b;
+    animation-delay: 0.09s;
+}
+.google-assistant:nth-child(3) {
+    background-color: #f1c40f;
+    animation-delay: .18s;
+}
+.google-assistant:nth-child(4) {
+    background-color: #27ae60;
+    animation-delay: .27s;
+}
+  
+@keyframes loading {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1, 1.8);
+    }
+    40% {
+        transform: scale(1);
+    }
+}
+
+.growing {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 0.3em;
+    height: 1em;
+}
+
+.growing-bar {
+    border-radius: 0.3em;
+    background-color: lightblue;
+    height: 1em;
+    /* animation: ; */
+}
+
+@keyframes expand {
+    from {
+    }
+    to {
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <title>CSS Animations tutorial</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">"
+    <!-- <link rel="stylesheet" href="./animate.css"> -->
+    <link rel="stylesheet" href="./empty_animate.css">
+</head>
+<body>
+    <div class="container" id="elements">
+        <h5>CSS Animations</h5>
+        <p>There are 2 components of an animation:</p>
+        <ol>
+            <li>style describing animation</li>
+            <li>a set of keyframes describing start/end/midpoints</li>
+        </ol>
+        <br />
+        <p>Advantages of using CSS (rather than Javascript)</p>
+        <ul>
+            <li><span style="color:red">Easy</span> to use for easy animations</li>
+            <li>Runs <span style="color:red">well</span> in browser (allowing it skip frames as necessary, etc.)</li>
+            <li>Allows browser to <span style="color:red">optimize</span>, rather than requiring it consistently (such as when you are on a different tab)</li>
+        </ul>
+        <hr />
+        <p>
+            There are a number of basic properties that can help
+            you get your animations going:
+        </p>
+        <ul>
+            <li>name: this is the name of your @keyframes</li>
+            <li>duration: default = 0s (no animation)</li>
+            <li>iteration-count</li>
+            <li>delay (negative values allowed)</li>
+            <li>direction (options are normal (default), reverse, alternate, and alternate-reverse)</li>
+            <li>timing-function</li>
+            <li>fill-mode: what happens before and after the animation?</li>
+            <li>play-state</li>
+        </ul>
+        <hr />
+        <div class="timings">
+            <h5>Timing functions:</h5>
+            <p id="slide-1">Linear: same speed</p>
+            <p id="slide-2">Ease: default</p>
+            <p id="slide-3">Ease-in: slow start</p>
+            <p id="slide-4">Ease-out: slow end</p>
+            <p id="slide-5">Ease-in-out: slow start / end</p>
+            <p id="slide-6">Cubic bezier: define your own values! <a href="http://cubic-bezier.com/#.12,.25,.23,-0.01">Test your function here</a></p>
+            <p id="slide-7">Another cubic bezier (very different)</p>
+        </div>
+        <hr />
+        <div class="fill-modes">
+            <h5>Fill mode demo :)</h5>
+            <span id="fill-1">None</span>
+            <span id="fill-2">forwards (retains last keyframe)</span>
+            <span id="fill-3">backwards (looks ahead to first keyframe)</span>
+            <span id="fill-4">both</span>
+        </div>
+        <hr />
+        <div class="spinners">
+            <h5>How do you make (fake) loading spinners?</h5>
+            <div>Here's a cubic bezier one: <div class="loader-wrapper"><i id="loading-cubic" class="fas fa-spinner"></i></div></div>
+            <div>Here's a linear one: <div class="loader-wrapper"><i id="loading-linear" class="fas fa-spinner"></i></div></div>
+        </div>
+        <hr />
+        <div class="bars">
+            <h5>How do you make loading bars?</h5>
+            <div>
+                <p>This one's straightforward</p>
+                <div id="barber-bar"></div>
+            </div>
+            <div>
+                <p>This one's more fake</p>
+                <div class="growing">
+                    <div class="growing-bar"></div>
+                </div>
+            </div>
+            <div>
+                <p>Here's Google assistant's animation:</p>
+                <div>
+                    <div class="google-assistant"></div>
+                    <div class="google-assistant"></div>
+                    <div class="google-assistant"></div>
+                    <div class="google-assistant"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
